@@ -1,0 +1,15 @@
+package com.example.demo.com.example.demo;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+@Controller
+public class bikeControler {
+	
+	@RequestMapping("/hello")
+	public String hello(String msg) {
+		return "Hello " + msg;
+	}
+
+}
